@@ -11,6 +11,7 @@ The details for an individual story ID can be retrieved from this URI: https://h
 
 The API should return an array of the first n "best stories" as returned by the Hacker News API, sorted by their score in a descending order, in the form:
 
+```
 [  
     {  
         "title": "A uBlock Origin update was rejected from the Chrome Web Store",  
@@ -25,6 +26,7 @@ The API should return an array of the first n "best stories" as returned by the 
     { ... },  
     ...  
 ]  
+```
 
 ## Non-Functional requirements
 
@@ -33,10 +35,12 @@ In addition to the above, your API should be able to efficiently service large n
 README.md file should describe how to run the application, any assumptions and any enhancements or potential future changes to this solution
 
 ## How to run the application
-1. Open sub-folder (find .csproj file)
-2. Launch cmd or powershell
-3. Run "dotnet run --configuration Debug"
+```
+1. Go to HackerNews.Proxy\HackerNews.Proxy (find .csproj file)
+2. Launch cmd or powershell in the folder with .csproj file
+3. Run cmd "dotnet run --configuration Debug"
 4. Open https://localhost:7012/swagger in browser
+```
 
 ## Assumptions and future TODOs
 
